@@ -11,8 +11,10 @@ public class Product {
 	}
 
 	public static Product getIntance() {
+		//this instance will be created only once
 		if (instance == null) {
 			instance = new Product(5000.00);
+			//setting initial value 
 		}
 		return instance;
 	}
